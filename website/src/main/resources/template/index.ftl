@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <#include "./commons/public.ftl" />
-
     <#import "./commons/seo.ftl" as seo >
     <@seo.seo></@seo.seo>
-
     <link rel="stylesheet" href="${resourcesPath}/resources/css/index.css">
-
 </head>
 <body>
 <div class="box">
+    11
+    <#--<div class="mod_search">-->
+        <form id="searchForm" action="#" method="get" target="_blank" class="search_form cf">
+            <label class="search_label" for="keywords">搜索关键词</label>
+            <div class="search_keywords">
+                <input type="text" name="q" id="keywords" class="search_input" placeholder="请输入关键词" autocomplete="off"
+                       _stat="顶部导航区_搜索框" value="神奇动物在哪里">
+            </div>
+            <input type="hidden" name="stag" value="0">
+            <input type="hidden" name="smartbox_ab" value="">
+            <button class="search_btn" type="submit" _stat="顶部导航区_搜索按钮">
+                <svg class="svg_icon svg_icon_search" viewBox="0 0 18 18" width="18" height="18">
+                    fill="currentColor"></path>
+                </svg>
+                <span class="btn_inner text-center">搜索</span></button>
+        </form>
+
+        <#--<div class="mod_smartbox none" id="smartbox">-->
+            <#--<div class="sb_hot">-->
+                <#--<div class="sb_head">-->
+                    <#--<div class="sb_title">热门搜索</div>-->
+                    <#--<div class="sb_tools">-->
+                        <#--<a class="sb_more"-->
+                           <#--href="#"-->
+                           <#--target="_blank" _stat="common_smartbox:search_hotlist" title="更多热搜">-->
+                            <#--<span class="icon_text">更多热搜</span><i class="icon_sm icon_right_sm">-->
+                            <#--<svg class="svg_icon" viewBox="0 0 16 16">-->
+                                <#--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg_icon_right_sm"></use>-->
+                            <#--</svg>-->
+                        <#--</i></a>-->
+                    <#--</div>-->
+                <#--</div>-->
+            <#--</div>-->
+        <#--</div>-->
+    <#--</div>-->
+</div>
+
+
+<div class="box">
     <!-- 导航 -->
      <#include "./commons/header.ftl">
-
     <!-- banner -->
     <div class="banner w1920">
         <img src="${resourcesPath}/resources/img/banner.jpg" alt="" class="block-auto w-100">
     </div>
-
     <!-- content -->
     <div class="content ">
         <div class="bgimg">
@@ -32,11 +65,8 @@
                         预约看房
                     </span>
                 </div>
-
                 <div id="house">
-
                 </div>
-
             </div>
         </div>
         <div class="w1120">
@@ -54,65 +84,65 @@
                     </ul>
                     <div class="tab_box relative">
 
-                           <div class="absolute">
-                               <div class="relative">
-                                   <img src="${resourcesPath}/resources/img/zutu.jpg" alt="" class="w-100">
-                                   <ul class="con-text text-center">
-                                       <li class="current">单身男/女</li>
-                                       <li>应届毕业生</li>
-                                       <li>朋友</li>
-                                       <li>闺蜜</li>
-                                       <li>企业蓝领</li>
-                                   </ul>
-                               </div>
-                           </div>
-
-                            <div class="absolute hide">
-                                <div class=" relative">
-                                    <img src="${resourcesPath}/resources/img/page2.jpg" alt="" class="w-100">
-                                    <ul class="con-text1 text-center">
-                                        <li>时尚设计</li>
-                                        <li>品牌家电</li>
-                                        <li>温馨家具</li>
-                                        <li>无线WIFI</li>
-                                        <li>智能门锁</li>
-                                        <li>智能水电表</li>
-                                        <li>烟感喷淋</li>
-                                        <li>24H中央热水</li>
-                                        <li>充足储物空间</li>
-                                    </ul>
-                                </div>
+                        <div class="absolute">
+                            <div class="relative">
+                                <img src="${resourcesPath}/resources/img/zutu.jpg" alt="" class="w-100">
+                                <ul class="con-text text-center">
+                                    <li class="current">单身男/女</li>
+                                    <li>应届毕业生</li>
+                                    <li>朋友</li>
+                                    <li>闺蜜</li>
+                                    <li>企业蓝领</li>
+                                </ul>
                             </div>
+                        </div>
 
-                            <div class="absolute hide">
-                                <div class=" relative">
-                                    <img src="${resourcesPath}/resources/img/page3.jpg" alt="" class="w-100">
-                                    <ul class="con-text2 text-center">
-                                        <li>书吧</li>
-                                        <li>咖啡吧</li>
-                                        <li>桌球</li>
-                                        <li>健身室</li>
-                                        <li>按摩椅</li>
-                                        <li>社交厨房</li>
-                                        <li>无人超市</li>
-                                        <li>共享洗衣房</li>
-                                        <li>晾晒区</li>
-                                        <li>唱吧</li>
-                                        <li>快递箱</li>
-                                        <li>休闲空间</li>
-                                        <li>抓娃娃机</li>
-                                    </ul>
-                                </div>
+                        <div class="absolute hide">
+                            <div class=" relative">
+                                <img src="${resourcesPath}/resources/img/page2.jpg" alt="" class="w-100">
+                                <ul class="con-text1 text-center">
+                                    <li>时尚设计</li>
+                                    <li>品牌家电</li>
+                                    <li>温馨家具</li>
+                                    <li>无线WIFI</li>
+                                    <li>智能门锁</li>
+                                    <li>智能水电表</li>
+                                    <li>烟感喷淋</li>
+                                    <li>24H中央热水</li>
+                                    <li>充足储物空间</li>
+                                </ul>
                             </div>
+                        </div>
 
-                            <div class="absolute hide">
-                                <div class=" relative">
-                                    <img src="${resourcesPath}/resources/img/page4.jpg" alt="" class="w-100">
-                                    <ul class="con-text3 text-center">
-                                        <li>打造一个优雅<br>、整洁<br>、活力的社区</li>
-                                    </ul>
-                                </div>
+                        <div class="absolute hide">
+                            <div class=" relative">
+                                <img src="${resourcesPath}/resources/img/page3.jpg" alt="" class="w-100">
+                                <ul class="con-text2 text-center">
+                                    <li>书吧</li>
+                                    <li>咖啡吧</li>
+                                    <li>桌球</li>
+                                    <li>健身室</li>
+                                    <li>按摩椅</li>
+                                    <li>社交厨房</li>
+                                    <li>无人超市</li>
+                                    <li>共享洗衣房</li>
+                                    <li>晾晒区</li>
+                                    <li>唱吧</li>
+                                    <li>快递箱</li>
+                                    <li>休闲空间</li>
+                                    <li>抓娃娃机</li>
+                                </ul>
                             </div>
+                        </div>
+
+                        <div class="absolute hide">
+                            <div class=" relative">
+                                <img src="${resourcesPath}/resources/img/page4.jpg" alt="" class="w-100">
+                                <ul class="con-text3 text-center">
+                                    <li>打造一个优雅<br>、整洁<br>、活力的社区</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
