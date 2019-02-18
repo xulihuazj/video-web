@@ -1,0 +1,18 @@
+.mtb50{
+    margin: 48px 0 60px ;
+}
+
+.back{
+    width:160px;
+    height:44px;
+    line-height:44px;
+    background:rgba(255,255,255,0);
+    border:0px solid rgba(0, 0, 0, .96);
+    border-radius:4px;
+    border: 1px solid #00B8D4;
+}
+
+.content{
+    height: 430px;
+    margin: 10% 0px 6%;
+}

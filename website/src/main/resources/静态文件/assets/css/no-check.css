@@ -1,0 +1,114 @@
+.app-img {
+    padding: 0 162px 0 144px;
+    margin-bottom: 14px;
+    background: #fff;
+}
+
+.app-img img:first-child {
+    margin-top: 17px;
+}
+
+.app-img img:last-child {
+    margin-top: 24px;
+}
+
+.app-img span {
+    padding: 64px 100px 0 40px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.account-top.flex-between {
+    align-items: center;
+    
+}
+
+.part-top {
+    padding: 50px 0 56px;
+}
+
+.order-btn {
+    width: 126px;
+    height: 38px;
+    line-height: 38px;
+    background: linear-gradient(-90deg, rgba(0, 184, 212, 1), rgba(127, 241, 251, 1));
+    border-radius: 24px;
+    box-shadow: 0px 2px 8px 1px rgba(80, 181, 208, 0.29);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 0 18px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.room-list ul {
+    flex-wrap: wrap;
+}
+
+.room-list ul li {
+    width: 278px;
+    height: 226px;
+    margin-bottom: 48px;
+    border: 1px solid #D7D7D7;
+    border-image: linear-gradient(#D7D7D7, #fff) 30 30;
+    cursor: pointer;
+}
+
+.room-list ul li>img {
+    width: 100%;
+}
+
+.room-text {
+    padding: 18px 10px;
+    flex-wrap: wrap;
+}
+
+.room-text span {
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+.room-list ul li:hover {
+    border: 1px solid #00B8D4;
+    box-shadow: 0px 11px 17px 3px rgba(8, 153, 175, 0.1);
+}
+
+
+.content {
+    margin-bottom: 120px;
+    margin-top: 24px;
+}
+
+.account-text>h3 {
+    line-height: 22px;
+    padding-bottom: 14px;
+}
+
+.account-top {
+    display: flex;
+    justify-content: flex-start;
+    padding: 28px 0 32px 30px;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 14px;
+}
+
+.account-top>img {
+    margin-right: 30px;
+}
+
+.account-text small a {
+    text-decoration: underline;
+}
+
+.part1 {
+    padding: 0 32px;
+    background: #fff;
+}
+
+.account-text{
+    width: calc(100% - 142px);
+}
+

@@ -1,0 +1,489 @@
+/* reset */
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+    border: 0;
+}
+
+i,
+cite,
+em,
+var,
+address,
+dfn {
+    font-style: normal;
+}
+
+[hidefocus],
+summary {
+    outline: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+    font-size: 100%;
+}
+
+sup,
+sub {
+    font-size: 83%;
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: inherit;
+}
+
+q:before,
+q:after {
+    content: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+label,
+summary {
+    cursor: default;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+    font-weight: normal;
+}
+
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+    text-decoration: none;
+}
+
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+    font: 14px/1.14 pf, "PingFang SC", 微软雅黑, \5b8b\4f53;
+    color: #333;
+    outline: 0;
+}
+
+a,
+a:hover {
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+body {
+    background: #fff;
+    font-family: pf, "微软雅黑";
+}
+
+.container {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 14vh;
+}
+
+.top {
+    position: relative;
+}
+
+.top > img {
+    display: block;
+    max-width: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 7%;
+    top: 10%;
+    width: 16.5%;
+    height: auto;
+    z-index: 99;
+}
+
+.nav {
+    position: absolute;
+    right: 7%;
+    top: 10%;
+    width: 5.5%;
+    height: auto;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.shapes {
+    background: #5a5961;
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 26%;
+    z-index: 10;
+}
+
+.forms ul li {
+    position: relative;
+    width: 100%;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    margin-bottom: 4%;
+}
+
+.forms ul li input {
+    height: 6.25vh;
+    line-height: 100%;
+    width: 100%;
+    border: none;
+    color: #bdbdbd;
+    padding: 0 3%;
+    font-size: 3vw;
+}
+
+.forms ul li .btn-code {
+    width: 28.3%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    border: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 100%;
+    font-size: 2.8vw;
+}
+.color-g {
+    background: #dbdbdb;
+}
+.color-b {
+    background: #02c0e5;
+}
+
+.forms ul li .img-code {
+    width: 27.3%;
+    height: 84%;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 2px;
+    border: 0;
+    position: absolute;
+    right: 1%;
+    bottom: 8%;
+}
+
+.submit-btn {
+    background: #02c0e5;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    height: 6.16vh;
+    line-height: 100%;
+    border: 0;
+    font-size: 3vw;
+}
+
+.forms ul li img {
+    position: absolute;
+    right: 2%;
+    bottom: 28%;
+    width: 6.3%;
+}
+
+.forms {
+    width: 62.5%;
+    margin: 7.5% auto;
+}
+
+.forms ul li:nth-child(2) {
+    overflow: hidden;
+}
+
+.forms ul li input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #bdbdbd;
+}
+
+.forms ul li input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bdbdbd;
+}
+
+.forms ul li input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bdbdbd;
+}
+
+.forms ul li input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #bdbdbd;
+}
+
+.danger {
+    color: #ff4033;
+    font-size: 3vw;
+    margin-top: -1%;
+    margin-bottom: 8%;
+}
+
+@media (max-width: 340px) {
+    .forms {
+        width: 80%;
+    }
+}
+
+.wap-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #5a5961;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+}
+
+span#close img {
+    display: block;
+    float: right;
+    margin-right: 7%;
+    margin-top: 5.8%;
+    margin-bottom: 9.4%;
+    width: 4%;
+    max-width: 30px;
+    cursor: pointer;
+}
+
+.wap-nav ul {
+    clear: both;
+    text-align: center;
+}
+
+.wap-nav ul li {
+    line-height: 10.24vh;
+    height: 10.24vh;
+}
+
+.wap-nav ul li a {
+    font-size: 4vw;
+    color: #fff;
+    padding: 0 1vw 1.5vh;
+    letter-spacing: 4px;
+}
+
+.wap-nav ul li a:hover {
+    border-bottom: 0.8vh solid #02c0e5;
+    color: #02c0e5;
+}
+
+.submit-box {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: rgba(33, 33, 33, 0.2);
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.blok {
+    display: none;
+}
+
+.dilog {
+    width: 60%;
+    height: 36%;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 36vh;
+}
+
+.dilog img {
+    width: 10.35vw;
+    display: block;
+    margin: 6.1vh auto 3vh;
+    max-width: 80px;
+}
+
+.dilog h3 {
+    font-size: 4.6vw;
+    color: #212121;
+}
+
+.dilog p {
+    font-size: 3.2vw;
+    width: 86%;
+    margin: auto;
+    line-height: 3.6vh;
+    padding-top: 1.3vh;
+}
+
+.tips {
+    padding-top: 12.5%;
+    margin-bottom: 8%;
+}
+
+.tips-h1 {
+    color: #212121;
+    font-size: 5.15vw;
+    text-align: center;
+    font-family: pf-light, "微软雅黑";
+    letter-spacing: 2px;
+    margin-bottom: 3.2%;
+}
+
+.tips span {
+    width: 6rem;
+    height: 2px;
+    background: #00b8d4;
+    display: block;
+    margin: auto;
+}
+
+.text-p {
+    width: 80%;
+    margin: 3% auto 4.5%;
+    font-size: 3vw;
+    color: #151515;
+    text-indent: 2rem;
+    text-align: left;
+    max-width: 1200px;
+    line-height: 5vh;
+}
+
+.logoimg {
+    width: 86%;
+    display: block;
+    margin: 14vh auto;
+}
+
+.waps {
+    height: 12vh;
+}
+
+.shapes.shp-wap {
+    height: 100%;
+}
+
+.top.waps img {
+    top: 42%;
+}
+@media (min-width: 768px) {
+    .tips-h1 {
+        font-size: 42px;
+        line-height: 59px;
+    }
+    .text-p {
+        font-size: 32px;
+        line-height: 64px;
+    }
+    .forms ul li input,
+    .submit-btn {
+        font-size: 24px;
+    }
+    .forms ul li .btn-code,
+    .danger {
+        font-size: 20px;
+    }
+    .wap-nav ul li a {
+        font-size: 36px;
+    }
+    .dilog h3 {
+        font-size: 38px;
+    }
+    .dilog p {
+        font-size: 28px;
+        line-height: 46px;
+    }
+    .dilog {
+        height: 39%;
+    }
+}
+
+img {
+    width: 100%;
+
+}
+
+.container {
+    max-width: inherit;
+}
+
+.shapes {
+    background: #DCF2FC;
+    opacity: 1;
+}
+
+.top.waps .logo {
+    max-width: 212px;
+}
+
+.top.waps .nav {
+    max-width: 70px;
+}

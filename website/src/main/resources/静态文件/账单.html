@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐璟官网</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/public.css">
+    <link rel="stylesheet" href="assets/css/bill.css">
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 导航 -->
+        <nav class="w1120 flex-between">
+            <div class="nav-left flex-between">
+                <img src="assets/img/logo.png" alt="">
+                <span>
+                    <img src="assets/img/didi.png" alt="">
+                    苏州
+                </span>
+            </div>
+            <div class="nav">
+                <ul class="flex-between text-center">
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./product.html">乐璟产品</a></li>
+                    <li><a href="./about.html">关于乐璟</a></li>
+                    <li class="flex-between photo">
+                        <div class="photo-img">
+                            <img src="assets/img/dtx.png" alt="" class="block">
+                        </div>
+                        <span class="triangle_border_down"></span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- content -->
+        <div class="w1120 content flex-between">
+            <!-- 侧边导航 -->
+            <aside>
+                <div class="left-nav">
+                    <ul class="color66">
+                        <li>
+                            <a href="" class="font14">
+                                <span class="bg-incon bg-incon1"></span>
+                                我的房间
+                            </a>
+                        </li>
+                        <li class="on">
+                            <a href="" class="font14">
+                                <span class="bg-incon bg-incon2"></span>
+                                我的账单
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="font14">
+                                <span class="bg-incon bg-incon3"></span>
+                                我的优惠券
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="font14">
+                                <span class="bg-incon bg-incon4"></span>
+                                保洁维修
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="font14">
+                                <span class="bg-incon bg-incon5"></span>
+                                我的投诉
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="font14">
+                                <span class="bg-incon bg-incon6"></span>
+                                账户设置
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- 右边主体 -->
+            <div class="content-body w940">
+                <div class="small-nav color99 font12">我的生活 > 我的账单</div>
+                <div class="body-list">
+                    <ul class="list-top flex-between">
+                        <li class="flex-between">
+                            <span class="color27 font14">账单类型：</span>
+                            <select class="w114 font14">
+                                <option value="">全部</option>
+                            </select>
+                        </li>
+                        <li class="flex-between">
+                            <span class="color27 font14">账单周期：</span>
+                            <input type="text" class="demo-input w114 font14" placeholder="年/月/日" id="test1">
+                            <span class="colore1">——</span>
+                            <input type="text" class="demo-input w114 font14" placeholder="年/月/日" id="test2">
+                        </li>
+                        <li class="flex-between">
+                            <span class="color27 font14">账单状态：</span>
+                            <select class="w114 font14">
+                                <option value="">全部</option>
+                            </select>
+                        </li>
+                        <li class="text-right">
+                            <button class="text-center search font14">查询</button>
+                        </li>
+                    </ul>
+                    <div class="order-list">
+                        <h3 class="color27 font18">
+                            账单列表
+                            <small class="font12 color99">（注：仅供查询12个月内的账单）</small>
+                        </h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>账单编号</th>
+                                    <th>账单类型</th>
+                                    <th>账单金额</th>
+                                    <th>账单周期</th>
+                                    <th>应付时间</th>
+                                    <th>账单状态</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>20180901001</td>
+                                    <td>房费</td>
+                                    <td>3,500.00</td>
+                                    <td>2018.08.01 - 2018.09.01</td>
+                                    <td>2018.09.01 08:05:01</td>
+                                    <td>
+                                        <span class="colord4 font14">部分支付</span>
+                                        <span class="color48 font14">未支付</span>
+                                        <span class="color27 font14">已支付</span>
+                                    </td>
+                                    <td>
+                                        <button class="pay btn font12">支付</button>
+                                        <button class="look btn font12">查看</button>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>20180901001</td>
+                                    <td>房费</td>
+                                    <td>3,500.00</td>
+                                    <td>2018.08.01 - 2018.09.01</td>
+                                    <td>2018.09.01 08:05:01</td>
+                                    <td>
+                                        <span class="colord4 font14">部分支付</span>
+                                        <span class="color48 font14">未支付</span>
+                                        <span class="color27 font14">已支付</span>
+                                    </td>
+                                    <td>
+                                        <button class="pay btn font12">支付</button>
+                                        <button class="look btn font12" ;>查看</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="page">
+                            <ul class="flex-between">
+                                <li>上一页</li>
+                                <li>首页</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li class="on">3</li>
+                                <li>...</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>末页</li>
+                                <li>下一页</li>
+                            </ul>
+                        </div>
+                        <div class="no-num">
+                            <img src="assets/img/ZDDD.png" alt="" class="mb40 block-auto">
+                            <p class="color66 font16 text-center">系统未查询到您的账单信息</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- footer -->
+        <footer>
+            <div class="w1120 ">
+                <div class="flex-between">
+                    <div class="foot1">
+                        <h5 class="font16">联系我们</h5>
+                        <div class="tel-text">
+                            <img src="assets/img/tele.png" alt="">
+                            <span>400-820-6537</span>
+                        </div>
+                        <div>
+                            <img src="assets/img/diz.png" alt="">
+                            <span class="color99 font14">上海市长宁区延安西路728号华敏·翰尊大厦17楼A</span>
+                        </div>
+                    </div>
+                    <div class="foot2">
+                        <ul class="color99">
+                            <li class="font14">明致公寓</li>
+                            <li class="font14">中富创展</li>
+                            <li class="font14">瑞贝庭公寓</li>
+                            <li class="font14">乐嘉服务公寓</li>
+                        </ul>
+                    </div>
+                    <div class="foot3 flex-between">
+                        <div>
+                            <img src="assets/img/erweim.png" alt="">
+                            <p class="color99 font12 text-center">关注乐璟社区</p>
+                        </div>
+                        <div>
+                            <img src="assets/img/erweim1.png" alt="">
+                            <p class="color99 font12 text-center">下载乐生活app</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="color99 font12 text-center foot-end">
+                    上海中富旅居电子商务有限公司 Copyright © 2016 乐璟社区 沪ICP备14052963号-8
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 账单详情 -->
+    <div class="fix-box pay-box">
+        <div class="model-box">
+            <div class="model-top flex-between">
+                <h3>水电费充值记录</h3>
+                <img src="assets/img/cc.png" alt="" class="close">
+            </div>
+            <div class="model-content">
+                <div class="w630">
+                    <ul class="flex-between">
+                        <li class="color27 font14 bold-s w-50">账单编号：201809011210</li>
+                        <li class="color27 font14 bold-s w-50">账单类型：房费</li>
+                        <li class="color27 font14 bold-s w-50"> 账单金额：<b class="bold-x colord4">3,500.00 </b>元</li>
+                        <li class="color27 font14 bold-s w-50"> 账单周期：2018.08.01—2018.09.01</li>
+                        <li class="color27 font14 bold-s w-50">应付时间：2018.09.01 08:05:01</li>
+                        <li class="color27 font14 bold-s w-50"> 所属合同：201808011231655654435</li>
+                        <li class="color27 font14 bold-s w-50">所属房间：东璟社区 C>209室</li>
+                        <li class="color27 font14 bold-s w-50">账单状态：已支付 <span class="color48 font14">未支付</span></li>
+                    </ul>
+                </div>
+                <div class="table-list">
+                    <h3 class="color27 font18 mb20">
+                        财务明细
+                        <small class="font12 color99">（共1条）</small>
+                    </h3>
+                    <table class="table text-left">
+                        <thead class="bold-x color27">
+                            <tr>
+                                <th>交易时间</th>
+                                <th>财务类型</th>
+                                <th>具体类型</th>
+                                <th>支付金额</th>
+                                <th>相关支付流水或凭证</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="color66">
+                            <tr>
+                                <td>2018.09.01 08:05:01</td>
+                                <td>企业</td>
+                                <td>转账</td>
+                                <td>3,500.00</td>
+                                <td>
+                                    支付流水 <a href="" class="colord4 font14 bold-s">P201809012198</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 class="color27 font18 mb20">
+                    扫码支付
+                    <span class="font14 color27 ml20">应付金额：<i class="colord4 font14">3,500.00 </i>元</i></span>
+                </h3>
+                <div class="coder-img flex-around">
+                    <div class="text-center">
+                        <div class="borders ">
+                            <img src="assets/img/er.png" alt="">
+                        </div>
+                        <p class="color99 font14 mt20">
+                            <img src="assets/img/weix.png" alt="">
+                            使用微信扫码付款
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="borders ">
+                            <img src="assets/img/er.png" alt="">
+                        </div>
+                        <p class="color99 font14 mt20">
+                            <img src="assets/img/zhifb.png" alt="">
+                            使用支付宝扫码付款
+                        </p>
+                    </div>
+                </div>
+                <div class="mt80">
+                    <button class="next">关闭</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 账单详情成功 -->
+    <div class="fix-box pay-box1">
+        <div class="model-box">
+            <div class="model-top flex-between">
+                <h3>账单详情</h3>
+                <img src="assets/img/cc.png" alt="" class="close">
+            </div>
+            <div class="model-content ">
+                <div class="w332">
+                    <div class="dilogs text-center mb100">
+                        <img src="assets/img/zhuce.png" alt="" class="block-auto">
+                        <h4 class="color27 font18">支付成功！</h4>
+                        <p class="color99 font14">本次支付金额：3,500.00元！</p>
+                    </div>
+                    <div class="flex-around">
+                        <button class="next">查看</button>
+                        <button class="next">关闭</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 重复提示 -->
+    <div class="fix-box pay-box2">
+        <div class="model-box">
+            <div class="model-top flex-between">
+                <h3>账单详情</h3>
+                <img src="assets/img/cc.png" alt="" class="close">
+            </div>
+            <div class="model-content ">
+              
+                    <div class="dilogs text-center mb100">
+                        <img src="assets/img/chacha.png" alt="" class="block-auto">
+                        <h4 class="color27 font18">该房间其他房客正在操作支付，请勿重复付款！</h4>
+
+                    </div>
+                    <div>
+
+                        <button class="next">关闭</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/laydate.js"></script>
+    <script>
+        lay('#version').html('-v' + laydate.v);
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#test1'
+        });
+        laydate.render({
+            elem: '#test2'
+        });
+
+        $(function () {
+            $(".money-btn").click(function () {
+                $(".pay-box").show();
+            });
+            $(".close").click(function () {
+                $(".pay-box").hide();
+            })
+        })
+    </script>
+</body>
+
+</html>
