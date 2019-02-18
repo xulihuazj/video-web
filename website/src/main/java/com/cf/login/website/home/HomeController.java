@@ -17,7 +17,6 @@ import com.cf.api.system.SystemType;
 import com.cf.login.apiinterface.common.CommonApiInterface;
 import com.cf.login.apiinterface.home.HomeInterface;
 import com.cf.login.website.BaseController;
-import com.cf.utils.validate.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

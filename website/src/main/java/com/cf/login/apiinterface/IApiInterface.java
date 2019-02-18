@@ -1,10 +1,9 @@
 package com.cf.login.apiinterface;
 
 
-import org.apache.http.HttpResponse;
-
 import com.cf.api.request.APIRequest;
 import com.cf.api.response.APIResponse;
+import org.apache.http.HttpResponse;
 
 /**
  * @author Administrator

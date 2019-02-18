@@ -1,20 +1,22 @@
 package com.cf.login.website.user;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.alibaba.fastjson.JSONObject;
 import com.cf.api.dto.app.user.UserInfoDTO;
+import com.cf.api.request.APIRequest;
 import com.cf.api.request.app.smart.RoomRecordRequest;
 import com.cf.api.request.app.user.*;
-import com.cf.api.response.app.house.AppHouseListResponse;
+import com.cf.api.request.sms.SMSCodeRequest;
+import com.cf.api.response.APIResponse;
 import com.cf.api.response.app.smart.RoomRecordResponse;
+import com.cf.api.response.app.user.RegisteredResponse;
 import com.cf.api.response.app.user.UserLoginResponse;
+import com.cf.api.system.SystemType;
 import com.cf.login.apiinterface.home.HomeInterface;
+import com.cf.login.apiinterface.user.UserApiInterface;
 import com.cf.login.constant.KeyName;
+import com.cf.login.website.BaseController;
 import com.cf.utils.web.WebHelper;
 import org.apache.commons.lang3.StringUtils;
-import org.codehaus.jackson.map.Serializers;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,15 +24,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.alibaba.fastjson.JSONObject;
-import com.cf.api.request.APIRequest;
-import com.cf.api.request.sms.SMSCodeRequest;
-import com.cf.api.response.APIResponse;
-import com.cf.api.response.app.user.RegisteredResponse;
-import com.cf.api.system.SystemType;
-import com.cf.login.apiinterface.user.UserApiInterface;
-import com.cf.login.website.BaseController;
-
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Controller

@@ -1,11 +1,7 @@
 package com.cf.login.apiinterface.user.impl;
 
-import javax.annotation.Resource;
-
-import com.cf.api.request.app.user.*;
-import org.springframework.stereotype.Service;
-
 import com.cf.api.request.APIRequest;
+import com.cf.api.request.app.user.*;
 import com.cf.api.request.sms.SMSCodeRequest;
 import com.cf.api.response.APIResponse;
 import com.cf.api.response.app.user.RegisteredResponse;
@@ -13,6 +9,9 @@ import com.cf.api.response.app.user.UserLoginResponse;
 import com.cf.login.apiinterface.IApiInterface;
 import com.cf.login.apiinterface.user.UserApiInterface;
 import com.cf.login.constant.APIUrlUtil;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 @Service
 public class UserApiInterfaceImpl implements UserApiInterface {

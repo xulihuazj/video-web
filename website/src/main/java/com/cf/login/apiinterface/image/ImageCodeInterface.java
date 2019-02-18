@@ -1,11 +1,11 @@
 package com.cf.login.apiinterface.image;
 
-import java.io.OutputStream;
-
 import com.cf.api.request.APIRequest;
 import com.cf.api.request.app.user.CodeShowPCRequest;
 import com.cf.api.response.APIResponse;
 import com.cf.api.response.app.user.CodeShowPCResponse;
+
+import java.io.OutputStream;
 
 public interface ImageCodeInterface {
 	

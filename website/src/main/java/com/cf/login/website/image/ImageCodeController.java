@@ -1,15 +1,6 @@
 package com.cf.login.website.image;
 
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.alibaba.fastjson.JSONObject;
 import com.cf.api.request.APIRequest;
 import com.cf.api.request.app.user.CodeShowPCRequest;
@@ -19,6 +10,14 @@ import com.cf.api.system.SystemType;
 import com.cf.login.apiinterface.image.ImageCodeInterface;
 import com.cf.login.website.BaseController;
 import com.cf.utils.web.WebHelper;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @Controller
 @RequestMapping("/image")

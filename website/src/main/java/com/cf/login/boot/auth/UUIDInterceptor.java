@@ -1,16 +1,15 @@
 package com.cf.login.boot.auth;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.cf.login.constant.KeyName;
+import com.cf.utils.security.SecurityHelper;
+import com.cf.utils.web.WebHelper;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.cf.login.constant.KeyName;
-import com.cf.utils.security.SecurityHelper;
-import com.cf.utils.web.WebHelper;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @Component
 public class UUIDInterceptor implements HandlerInterceptor {

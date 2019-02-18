@@ -1,15 +1,5 @@
 package com.cf.login.apiinterface.image.impl;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-
-import javax.annotation.Resource;
-
-import org.apache.http.HttpResponse;
-import org.springframework.stereotype.Service;
-
 import com.cf.api.request.APIRequest;
 import com.cf.api.request.app.user.CodeShowPCRequest;
 import com.cf.api.response.APIResponse;
@@ -18,6 +8,14 @@ import com.cf.login.apiinterface.IApiInterface;
 import com.cf.login.apiinterface.image.ImageCodeInterface;
 import com.cf.login.constant.APIUrlUtil;
 import com.cf.utils.log.LogHelper;
+import org.apache.http.HttpResponse;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 @Service
 public class ImageCodeInterfaceImpl implements ImageCodeInterface {

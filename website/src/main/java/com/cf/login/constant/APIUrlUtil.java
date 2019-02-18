@@ -1,10 +1,22 @@
 package com.cf.login.constant;
 
 public interface APIUrlUtil {
-	/**
-	 * 图片验证码
-	 */
-	public static String GET_IMAGE_CODE = "/app/image/code/";
+
+    /**
+     * 视频列表
+     */
+    String GET_CLIENT_VIDEO_LIST = "/client/video/list/";
+
+    /**
+     * 视频详情
+     */
+    String GET_CLIENT_VIDEO_DETIAL = "/client/video/detail/";
+
+
+    /**
+     * 图片验证码
+     */
+    String GET_IMAGE_CODE = "/app/image/code/";
 
     /**
      * 维修保洁
@@ -12,41 +24,41 @@ public interface APIUrlUtil {
     String GET_REPAIR_LIST = "/client/repair/list";
 
     String GET_REPAIR_DETAIL = "/client/repair/detail";
-    
+
     /**
      * 获取短信验证码(需要图形验证码)
      */
-    public static String APP_SMS_MOBILE_CODE = "/app/sms/mobile/code/imgCode";
-    
+    String APP_SMS_MOBILE_CODE = "/app/sms/mobile/code/imgCode";
+
     /**
      * 用户注册
      */
-    public static String CLIENT_USER_REGISTERED = "/client/user/registered";
+    String CLIENT_USER_REGISTERED = "/client/user/registered";
 
     /**
      * 登录检查是否需要展示图形验证码
      */
-    public static String CLIENT_USER_CODE_SHOW = "/client/user/code/show";
-    
+    String CLIENT_USER_CODE_SHOW = "/client/user/code/show";
+
     /**
      * 乐璟PC登录
      */
-    public static String CLIENT_USER_PC_LOGIN = "/client/user/pc/login";
+    String CLIENT_USER_PC_LOGIN = "/client/user/pc/login";
 
     /**
      * 我的账单列表
      */
-    static String MY_BILL_LIST = "/my/bill/list";
+    String MY_BILL_LIST = "/my/bill/list";
 
     /**
      * 我的账单详情
      */
-    static String MY_BILL_DETAIL = "/my/bill/detail";
-    
+    String MY_BILL_DETAIL = "/my/bill/detail";
+
     /**
      * 账单类型
      */
-    static String BILL_TYPES = "/billtype/list/l";
+    String BILL_TYPES = "/billtype/list/l";
 
 
     String GET_HOUSE_LIST = "/client/common/house";
@@ -56,15 +68,15 @@ public interface APIUrlUtil {
     /**
      * 投诉列表
      */
-    public static String GET_COMPLAINTS_LIST = "/client/complaints/list";
+    String GET_COMPLAINTS_LIST = "/client/complaints/list";
     /**
      * 投诉详情
      */
-    public static String GET_COMPLAINTS_DETAIL = "/client/complaints/detail";
+    String GET_COMPLAINTS_DETAIL = "/client/complaints/detail";
     /**
      * 投诉操作日志
      */
-    public static String GET_COMPLAINTS_DETAIL_LOG = "/client/complaints/log/list";
+    String GET_COMPLAINTS_DETAIL_LOG = "/client/complaints/log/list";
 
     /**
      * 我的房间
@@ -99,7 +111,7 @@ public interface APIUrlUtil {
     /**
      * 预约看房
      */
-    String POST_HOME_APPOINT_ROOM="/appoint/room";
+    String POST_HOME_APPOINT_ROOM = "/appoint/room";
 
     /**
      * 用户下单:乐璟官网:账单和充值下单，账单下单返回支付宝和微信两种收款码，充值根据选择的渠道生成码
@@ -135,16 +147,16 @@ public interface APIUrlUtil {
      * 重置密码
      */
     String POST_PMS_APP_USER_PWD_RESET = "/client/user/pc/password/reset";
-    
+
     /**
      * 检查手机验证码是否正确
      */
-    public String APP_SMS_CODE_CHECK = "/app/sms/code/check";
-    
+    String APP_SMS_CODE_CHECK = "/app/sms/code/check";
+
     /**
      * 验证码重置密码
      */
-    public String CLIENT_USER_PASSWORD_RESET = "/client/user/password/reset";
+    String CLIENT_USER_PASSWORD_RESET = "/client/user/password/reset";
 
 }
 

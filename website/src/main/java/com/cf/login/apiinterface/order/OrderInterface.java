@@ -4,7 +4,6 @@ import com.cf.api.request.APIRequest;
 import com.cf.api.request.app.order.CreateOrderRequest;
 import com.cf.api.request.app.order.OrderQueryRequest;
 import com.cf.api.response.APIResponse;
-import com.cf.api.response.app.order.CreateOrderResponse;
 import com.cf.api.response.app.order.LoginCreateOrderResponse;
 import com.cf.api.response.app.order.OrderCancelResponse;
 import com.cf.api.response.app.order.OrderQueryResponse;

@@ -1,7 +1,6 @@
 package com.cf.login.website.order;
 
 import com.cf.api.dto.app.order.OrderBatchQueryDTO;
-import com.cf.api.enums.app.order.OrderBuinessTypeEnum;
 import com.cf.api.enums.app.order.OrderStatusEnum;
 import com.cf.api.request.APIRequest;
 import com.cf.api.request.app.order.CreateOrderRequest;

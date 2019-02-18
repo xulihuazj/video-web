@@ -1,9 +1,5 @@
 package com.cf.login.apiinterface.mybill.impl;
 
-import javax.annotation.Resource;
-
-import org.springframework.stereotype.Service;
-
 import com.cf.api.request.APIRequest;
 import com.cf.api.request.finance.BillTypeRequest;
 import com.cf.api.request.finance.MyBillDetailRequest;
@@ -15,6 +11,9 @@ import com.cf.api.response.finance.MyBillResponse;
 import com.cf.login.apiinterface.IApiInterface;
 import com.cf.login.apiinterface.mybill.MyBillInterface;
 import com.cf.login.constant.APIUrlUtil;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 @Service
 public class MyBillInterfaceImpl implements MyBillInterface{
     @Resource

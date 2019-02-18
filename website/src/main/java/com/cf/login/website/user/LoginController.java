@@ -1,19 +1,5 @@
 package com.cf.login.website.user;
 
-import java.io.IOException;
-
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.apache.commons.lang3.StringUtils;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
-
 import com.alibaba.fastjson.JSONObject;
 import com.cf.api.enums.app.user.LoginTypeEnum;
 import com.cf.api.request.APIRequest;
@@ -25,8 +11,19 @@ import com.cf.login.apiinterface.user.UserApiInterface;
 import com.cf.login.constant.KeyName;
 import com.cf.login.website.BaseController;
 import com.cf.utils.log.LogHelper;
-import com.cf.utils.security.SecurityHelper;
 import com.cf.utils.web.WebHelper;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 @Controller
 @RequestMapping("/login")

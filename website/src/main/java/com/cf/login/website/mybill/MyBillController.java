@@ -1,13 +1,5 @@
 package com.cf.login.website.mybill;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 import com.cf.api.request.APIRequest;
 import com.cf.api.request.finance.BillTypeRequest;
 import com.cf.api.request.finance.MyBillDetailRequest;
@@ -19,6 +11,15 @@ import com.cf.api.response.finance.MyBillResponse;
 import com.cf.api.system.SystemType;
 import com.cf.login.apiinterface.mybill.MyBillInterface;
 import com.cf.login.website.BaseController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @Description : 我的账单

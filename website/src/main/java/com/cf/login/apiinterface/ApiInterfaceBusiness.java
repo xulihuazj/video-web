@@ -42,8 +42,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.net.ssl.SSLContext;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.nio.charset.Charset;
@@ -127,9 +125,6 @@ public class ApiInterfaceBusiness implements IApiInterface {
      * @return
      */
     private String sendPostJsonStr(APIRequest api, String url, Boolean throwBl) {
-
-        //Log.error("用户Authorization:"+api.getAuthorization()+"访问路径为:"+url);
-
         HttpResponse response;
         HttpClient httpClient;
         HttpPost httpPost = null;
@@ -208,18 +203,6 @@ public class ApiInterfaceBusiness implements IApiInterface {
             if (true) {
                 throw new BusinessException(HttpStatus.SC_FORBIDDEN, TOKEN_LOSE_EFFICACY, "需要重新登录 token 已失效");
             }
-
-//            HttpEntity entity = httpResponse.getEntity();
-//            // 响应状态
-//            // 判断响应实体是否为空
-//            if (entity != null) {
-//                String responseString = EntityUtils.toString(entity, Charset.forName("UTF-8"));
-//                if (debug) {
-//                    LogHelper.info("response content:" + responseString.replace("\r\n", ""));
-//                }
-//                return responseString;
-//            }
-
         }
         return null;
     }
@@ -233,15 +216,11 @@ public class ApiInterfaceBusiness implements IApiInterface {
      * @return
      */
     private String sendGetJsonStr(APIRequest<?> api, String url, Boolean throwBl) {
-        //Log.error("用户Authorization:"+api.getAuthorization()+"访问路径为:"+url);
         HttpResponse response;
         HttpClient httpClient;
         HttpGet httpGet = null;
-
         StringBuffer sb = new StringBuffer(API_HOST).append(url).append("?");
-
         try {
-
             JSONObject params = new JSONObject();
             if (api.getBizRequest() != null) {
                 Object object = api.getBizRequest();
@@ -251,7 +230,6 @@ public class ApiInterfaceBusiness implements IApiInterface {
             params.put("dtMonitor", api.getDtMonitor());
             params.put("source", api.getSource().getCode());
             params.put("version", api.getVersion());
-
             int count = 0;
             for (Iterator<Map.Entry<String, Object>> iter = params.entrySet().iterator(); iter.hasNext(); ) {
                 count++;
@@ -278,8 +256,6 @@ public class ApiInterfaceBusiness implements IApiInterface {
                     } else {
                         if (entry.getValue() instanceof JSONArray) {
                             JSONArray jsonArray = (JSONArray) entry.getValue();
-//                            String jsonString = jsonArray.toJSONString();
-//                            jsonString = jsonString.substring(1, jsonString.length() - 1).replace("\"", "");
                             if(jsonArray != null && jsonArray.size() > 0){
                             	// 这里只处理非对象的数据
                                 for (int i = 0; i < jsonArray.size(); i++) {
@@ -342,12 +318,10 @@ public class ApiInterfaceBusiness implements IApiInterface {
             apiResponse = JSON.parseObject(jsonResp, new TypeReference<APIResponse<T>>(t) {
             });
         }
-
         // 500
         if (apiResponse.getStatusCode().equals(HttpStatus.SC_INTERNAL_SERVER_ERROR + "")) {
             throw new BusinessException(apiResponse.getMessage());
         }
-
         // 其他错误
         if (throwBl && !apiResponse.getStatusCode().equals(org.apache.http.HttpStatus.SC_OK + "")) {
             throw new BusinessException(apiResponse.getMessage());
@@ -362,9 +336,8 @@ public class ApiInterfaceBusiness implements IApiInterface {
 		httpGet.addHeader("content-type", "application/json;charset=utf-8");
 		httpGet.addHeader("x-Forwarded-For", IP);
 		httpGet.addHeader("user-agent", useAgent);
-
 		HttpClient httpClient = getHttpClient();
-		HttpResponse response = null;
+		HttpResponse response;
 		try {
 			response = httpClient.execute(httpGet);
 		} catch (IOException e) {

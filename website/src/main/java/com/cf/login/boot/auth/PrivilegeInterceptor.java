@@ -1,10 +1,10 @@
 package com.cf.login.boot.auth;
 
-import java.lang.reflect.Method;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.cf.api.dto.app.user.UserInfoDTO;
+import com.cf.api.system.SystemType;
+import com.cf.login.constant.KeyName;
+import com.cf.login.website.BaseController;
+import com.cf.utils.web.WebHelper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Component;
@@ -12,11 +12,9 @@ import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.cf.api.dto.app.user.UserInfoDTO;
-import com.cf.api.system.SystemType;
-import com.cf.login.constant.KeyName;
-import com.cf.login.website.BaseController;
-import com.cf.utils.web.WebHelper;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.lang.reflect.Method;
 
 /**
  * 权限验证
@@ -29,7 +27,7 @@ public class PrivilegeInterceptor implements HandlerInterceptor {
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-		boolean bl = false;
+		boolean bl;
 		HandlerMethod handlerMethod = (HandlerMethod) handler;
 		Method method = handlerMethod.getMethod();
 		SystemType annotationSystem = method.getAnnotation(SystemType.class);

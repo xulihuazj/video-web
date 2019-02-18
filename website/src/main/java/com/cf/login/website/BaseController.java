@@ -11,9 +11,9 @@ import com.cf.utils.security.SecurityHelper;
 import com.cf.utils.web.WebHelper;
 import org.apache.commons.lang3.StringUtils;
 
-import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * BaseController是所有Controller的基类,用于一些统一/公共部分的处理
